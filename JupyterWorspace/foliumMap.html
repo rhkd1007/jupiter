@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_13f666d90df481414ef35d6579ef6ba2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_13f666d90df481414ef35d6579ef6ba2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_13f666d90df481414ef35d6579ef6ba2 = L.map(
+                "map_13f666d90df481414ef35d6579ef6ba2",
+                {
+                    center: [37.099931960000006, 127.34821139999998],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7974f15a49765660fb051b53b5ee64f9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            var marker_28a183cc7997051c78d7a6dcd95e4c61 = L.marker(
+                [37.493922, 127.061026],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_28a183cc7997051c78d7a6dcd95e4c61.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_328bfbbf92b7c070928cb60b6abecf1c = L.marker(
+                [37.505675, 127.047883],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_328bfbbf92b7c070928cb60b6abecf1c.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_93f0c1d8fa47e313242c8d558bfac4c3 = L.marker(
+                [37.471711, 127.89922],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_93f0c1d8fa47e313242c8d558bfac4c3.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5ed182760a4a0c7a3c6db7da1ae85c01 = L.marker(
+                [35.159774, 128.980455],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_5ed182760a4a0c7a3c6db7da1ae85c01.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0223cc0cd3d45403609eea1e29151d68 = L.marker(
+                [37.500249, 127.104071],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_0223cc0cd3d45403609eea1e29151d68.bindTooltip(
+                `<div>
+                     생활서비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87d19394a9e4c741746626b9a1f565b8 = L.marker(
+                [37.515149, 127.10249],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_87d19394a9e4c741746626b9a1f565b8.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af452ccfbec984fabeb6573c18f060b0 = L.marker(
+                [37.549245, 127.088387],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_af452ccfbec984fabeb6573c18f060b0.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d214702c3ba80ab92e07c48f2bfb316d = L.marker(
+                [37.562013, 126.809957],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_d214702c3ba80ab92e07c48f2bfb316d.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ea780c628ddeeb483cc9f1414c5d3c8 = L.marker(
+                [37.552153, 127.010861],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_9ea780c628ddeeb483cc9f1414c5d3c8.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b594ff19010cec9d2dec6752045468bb = L.marker(
+                [37.538927, 126.836078],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_b594ff19010cec9d2dec6752045468bb.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_598d8a1372080ab69c373c941884e191 = L.marker(
+                [37.492388, 127.014217],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_598d8a1372080ab69c373c941884e191.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7736d372d41f6e22a2e3d63032ce4d6 = L.marker(
+                [37.48039, 126.886859],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_b7736d372d41f6e22a2e3d63032ce4d6.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d8013c24c5b22940b7682d9324509d4 = L.marker(
+                [37.588485, 127.031702],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_5d8013c24c5b22940b7682d9324509d4.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc685736958f0ad3aaf85288d5125d2a = L.marker(
+                [37.504067, 126.880898],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_bc685736958f0ad3aaf85288d5125d2a.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_07efb25cd39f2e084ff21e23af61af38 = L.marker(
+                [37.608392, 127.028726],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_07efb25cd39f2e084ff21e23af61af38.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9834b54d6e251afa91a38c29f6ad73b7 = L.marker(
+                [37.503693, 126.89771],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_9834b54d6e251afa91a38c29f6ad73b7.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74946a6e14cf3190bab5e5ea376793c1 = L.marker(
+                [37.579029, 126.910288],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_74946a6e14cf3190bab5e5ea376793c1.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1152b0aa7d83b3e946e0689cdfaa52c = L.marker(
+                [37.580073, 127.043189],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_a1152b0aa7d83b3e946e0689cdfaa52c.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04be7b2789c4107dd5049465c0792b9d = L.marker(
+                [37.552103, 127.071184],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_04be7b2789c4107dd5049465c0792b9d.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1c1641a8f6fa364f872d7c54d5df316 = L.marker(
+                [37.545461, 127.076812],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_e1c1641a8f6fa364f872d7c54d5df316.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ce26cad17094ad35118b09ebe5342b5 = L.marker(
+                [37.580196, 127.045022],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_1ce26cad17094ad35118b09ebe5342b5.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1a2fcbccf804239074fe3d10f793916 = L.marker(
+                [37.562274, 126.982419],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_c1a2fcbccf804239074fe3d10f793916.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7653f590b84c86133ad5c1b1c8f8170 = L.marker(
+                [37.535419, 126.840285],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_e7653f590b84c86133ad5c1b1c8f8170.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7796ce8217a2aa806fd319ec0605a7d1 = L.marker(
+                [37.527477, 127.115873],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_7796ce8217a2aa806fd319ec0605a7d1.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6448578f38e2ac851392f5c6ae698794 = L.marker(
+                [37.526139, 126.88532],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_6448578f38e2ac851392f5c6ae698794.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab66e9e163ce5995c8334b49425ecb83 = L.marker(
+                [37.648247, 127.078464],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_ab66e9e163ce5995c8334b49425ecb83.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_64fca51727a334790c74ffefad3331fb = L.marker(
+                [37.512939, 127.0571],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_64fca51727a334790c74ffefad3331fb.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_986e7454796ebc2f363fe5a051793f92 = L.marker(
+                [37.517574, 127.020945],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_986e7454796ebc2f363fe5a051793f92.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_899bdccc7bee1f6aaff0a0940adc616d = L.marker(
+                [35.202902, 129.068324],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_899bdccc7bee1f6aaff0a0940adc616d.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bdc394bb369baf075990073fc5e7cb2c = L.marker(
+                [35.144776, 129.059574],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_bdc394bb369baf075990073fc5e7cb2c.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5407246d94530d09b685f4f53040ae81 = L.marker(
+                [37.499229, 126.927655],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_5407246d94530d09b685f4f53040ae81.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6ad3af89d42b8cf6c10de8a24eb614b = L.marker(
+                [35.150069, 127.034302],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_a6ad3af89d42b8cf6c10de8a24eb614b.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b618d1cec3fff86629116b47b27d7d0 = L.marker(
+                [35.141176, 129.10633],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_2b618d1cec3fff86629116b47b27d7d0.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b5a5d6de696487dd137db0d2c5a2e0a = L.marker(
+                [37.479403, 126.980242],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_8b5a5d6de696487dd137db0d2c5a2e0a.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_551f01c4ac85b1efea60634b52751c4b = L.marker(
+                [37.512569, 126.945099],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_551f01c4ac85b1efea60634b52751c4b.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_741e536249e826aabcd9e7868c69a75b = L.marker(
+                [35.123196, 129.034599],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_741e536249e826aabcd9e7868c69a75b.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7377c86e116903c5e046611361ff1c5 = L.marker(
+                [37.546718, 127.054649],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_c7377c86e116903c5e046611361ff1c5.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6e6dece99c6a38be01ab2ff8b0d9fbe = L.marker(
+                [37.553668, 127.019556],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_d6e6dece99c6a38be01ab2ff8b0d9fbe.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_30154ddf9490102d4d833b162c0e290c = L.marker(
+                [37.488742, 127.053198],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_30154ddf9490102d4d833b162c0e290c.bindTooltip(
+                `<div>
+                     의료
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e78271fd345b6d0b06c89310037a3c0b = L.marker(
+                [37.493653, 127.031005],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_e78271fd345b6d0b06c89310037a3c0b.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_096ac169b0897f018c5f7e8c96656b6d = L.marker(
+                [37.498462, 127.05856],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_096ac169b0897f018c5f7e8c96656b6d.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45313e9019358cbb257aeb2137b19f84 = L.marker(
+                [37.556602, 127.078519],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_45313e9019358cbb257aeb2137b19f84.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d7f55b6d6d70ec9b74d3deeb592d5ff9 = L.marker(
+                [37.54418, 127.056141],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_d7f55b6d6d70ec9b74d3deeb592d5ff9.bindTooltip(
+                `<div>
+                     소매
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4b4f015e2b8bfd845efbbd2f574c8e4c = L.marker(
+                [35.111532, 129.034605],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_4b4f015e2b8bfd845efbbd2f574c8e4c.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_515ce443b713e0954b2f543470222f95 = L.marker(
+                [37.508058, 126.888485],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_515ce443b713e0954b2f543470222f95.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80d686313c91f3b0d2a5ae5a8cf72279 = L.marker(
+                [35.085777, 129.070117],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_80d686313c91f3b0d2a5ae5a8cf72279.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26fce00dc9365afbad30c5e92aa29ff5 = L.marker(
+                [37.546103, 127.057746],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_26fce00dc9365afbad30c5e92aa29ff5.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_54474d1ded1311975d3726dce6e6688f = L.marker(
+                [37.483899, 126.929288],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_54474d1ded1311975d3726dce6e6688f.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b4749718ba19557b00ee8675da8f7fe1 = L.marker(
+                [37.489299, 127.054163],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_b4749718ba19557b00ee8675da8f7fe1.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dbeb2bd29492c0beacf4eaac3784b4cd = L.marker(
+                [35.143421, 129.060972],
+                {}
+            ).addTo(map_13f666d90df481414ef35d6579ef6ba2);
+        
+    
+            marker_dbeb2bd29492c0beacf4eaac3784b4cd.bindTooltip(
+                `<div>
+                     음식
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
